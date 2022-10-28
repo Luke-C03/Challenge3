@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerControllerX : MonoBehaviour
 {
     public bool gameOver;
+    public bool lowEnough = true;
 
     public float floatForce;
     private float gravityModifier = 1.5f;
@@ -16,7 +17,6 @@ public class PlayerControllerX : MonoBehaviour
     private AudioSource playerAudio;
     public AudioClip moneySound;
     public AudioClip explodeSound;
-
 
     // Start is called before the first frame update
     void Start()
